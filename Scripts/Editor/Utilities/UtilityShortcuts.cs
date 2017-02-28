@@ -12,7 +12,7 @@ namespace Sabresaurus.SabreCSG
 	public class UtilityShortcuts : MonoBehaviour
 	{
 		[MenuItem("GameObject/Create CSG", false, 30)]
-		static void CreateNewCSGObject()
+		public static void CreateNewCSGObject()
 		{
 			// Create objects to hold the CSG Model and Work Brush (with associated scripts attached)
 			GameObject rootGameObject = new GameObject("CSGModel", typeof(CSGModel));
@@ -31,7 +31,7 @@ namespace Sabresaurus.SabreCSG
 		}
 		
 		[MenuItem("Edit/Rebuild CSG " + KeyMappings.Rebuild, false, 100)]
-		static void Rebuild()
+		public static void Rebuild()
 		{
             CSGModel activeCSGModel = CSGModel.GetActiveCSGModel();
 
